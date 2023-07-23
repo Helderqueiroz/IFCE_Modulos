@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboDrive</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo TurboDrive">
+            <h2>TurboDrive</h2>
+        </div>
+        <nav>
+            <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+            <label id="label-toggle" for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
+            <ul class="navbar-collapse">
+                <li><a href="index.html"><img src="imagens/home.png" width="16px"> Página Inicial</a></li>
+                <li><a href="autor.html"><img src="imagens/estrela.png" width="16px">Sobre o autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Usuários cadastrados</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sérgio Igor dos Santos</td>
+                    <td>sergio</td>
+                    <td>sergio@email.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yago Danilo Ferreira</td>
+                    <td>yago</td>
+                    <td>yagodanilo@email.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Nome do autor: Francisco Helder</p>
+    </footer>
+</body>
+
+</html>

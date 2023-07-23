@@ -1,0 +1,183 @@
+/* Estilos CSS globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos CSS para o header */
+header {
+    background-color: #0e153a;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+form {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #0e153a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1f2d5b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a7b3ff;
+}
+
+/* Estilos CSS para o conteúdo da página */
+.content {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 35px;
+    text-align: center;
+    color: #0e153a;
+}
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: #0e153a;
+    margin-top: 5px;
+}
+
+/* Estilos CSS para o rodapé */
+footer {
+    background-color: #0e153a;
+    margin-top: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+    #navbar-toggle {
+        display: none;
+    }
+
+    .navbar-toggle-label {
+        display: none;
+    }
+}
+
+/* Estilos CSS para a barra de navegação responsiva */
+@media screen and (max-width: 600px) {
+    .navbar-toggle-label {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    #navbar-toggle:checked~.navbar-collapse {
+        display: block;
+    }
+
+    @media screen and (min-width: 601px) {
+        .navbar-collapse {
+            display: flex !important;
+        }
+    }
+}
